@@ -5,6 +5,9 @@ import App from './components/App';
 import SocketContext from './context/SocketContext';
 import io from 'socket.io-client';
 import '../assets/styles/style.css';
+// const fs = require('fs');
+// const readline = require('readline');
+// const {google} = require('googleapis');
 
 const socket = io.connect('http://localhost:3333');
 

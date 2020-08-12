@@ -45,6 +45,9 @@ io.on('connection', (socket) => {
   // Welcome current user
   socket.emit('message', 'Welcome to What The Gif ?!');
 
+  //Google API signIn 
+  //socket.emit('signIn', () => {})
+
   // Listen for the new player joining the game by inputing name on splash page
   socket.on('newPlayer', (name) => {
     // create new player and add them to array of players
@@ -119,7 +122,7 @@ io.on('connection', (socket) => {
         const currentJudge = players[currentJudgeIndex];
         io.emit('newJudge', { name: currentJudge.name, index: currentJudgeIndex, currGif });
       }
-    }, 5000);
+    }, 1000);
   });
 });
 
