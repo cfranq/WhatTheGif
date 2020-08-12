@@ -32,12 +32,31 @@ const App = () => {
     setGameEnd(true);
   });
 
+  //initializeGoogleSignIn() {
+    // window.GamepadHapticActuator.load('auth2', () => {
+    //   window.GamepadHapticActuator.auth2.init({
+    //     client_id:
+    //     "248537884063-ababaq1mckqquih1ib5vi0d0nqs07up4.apps.googleusercontent.com"
+    //   }).then(() => {
+    //     const isSignedIn = window.gapi.auth2.
+    //     getAuthInstance().isSignedIn.get()
+    //     {setisSignedIn}
+    //   })
+    // })
+  //};
+  // compnentDidMount() {
+  //   const script = document.createElement('script')
+  //   script.src = "https://apis.google.com/js/platfrom.js"
+  //   script.onload = () => this.initalizeGoogleSignIn()
+  //   document.body.appendChild(script)
+  // };
+
   let currentView;
   //if(isSignedIn) {
   // currentView = 
       // (
       //   <div>
-            //Login Button
+            //< LoginPage setisSignIn={isSignedIn} />
             //< MainGame />
       //   </div>
       // )

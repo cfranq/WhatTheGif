@@ -12,7 +12,20 @@ const SplashPage = () => {
   const onSubmit = () => {
     socket.emit('newPlayer', name);
   };
-
+ 
+  // const LoginPage = (props) => {
+    //if(props.isSignedIn === null) {
+    //   return <h1>Checking if you're signed in</h1>
+    // }
+  //   window.gapi.load('signin2', () => {
+  //     window.gapi.signin2.render('login-button')
+  //   }) 
+  //   return (
+  //     <div className="splash-container">
+  //       <div id="login-button">Sign in with Google</div>
+  //     </div>
+  //   )
+  // }
   console.log(name);
   return (
     <div className="splash-container">
