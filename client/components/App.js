@@ -10,8 +10,13 @@ const App = () => {
   const [gameOn, setGameOn] = useState(false);
   const [gameEnd, setGameEnd] = useState(false);
   const [winner, setWinner] = useState('');
+ //const [isSignedIn, setisSignedIn] = useState(false);
 
   const socket = useContext(SocketContext);
+
+  // socket.on('signIn', (userCredentials) => {
+  //   setisSignedIn(true);
+  // });
 
   socket.on('startGame', () => {
     setGameOn(true);
@@ -28,10 +33,19 @@ const App = () => {
   });
 
   let currentView;
+  //if(isSignedIn) {
+  // currentView = 
+      // (
+      //   <div>
+            //Login Button
+            //< MainGame />
+      //   </div>
+      // )
+  // }
   if (gameOn) {
     currentView = 
     (<div>
-      <img alt="logo" src="https://fontmeme.com/permalink/200812/494bb6ee41bd84762de732c77da6bd2f.png" width='80%' />
+      <img alt="logo" src="https://fontmeme.com/permalink/200812/494bb6ee41bd84762de732c77da6bd2f.png" height='100px' />
       <MainGame />
       </div>);
   } else if (gameEnd) {
